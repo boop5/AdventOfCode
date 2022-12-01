@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32811.315
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2022", "2022", "{794BF80D-0703-4A0C-8370-1F443A70C0C7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Day 1 - Calorie Counting", "Day 1 - Calorie Counting", "{D87C02EC-26B7-47E8-B9C0-A296192D48FC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AoC_2022_Day1", "2022\AoC_2022_Day1\AoC_2022_Day1.csproj", "{1DA715B9-AB8C-4243-BF03-9C9CA6C5E56D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{FB754A56-73C4-45E1-B138-F364A81E4DCF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdventOfCode.Domain", "2022\AdventOfCode.Domain\AdventOfCode.Domain.csproj", "{ADFFE81A-2CF6-44D5-879D-6C6FF4B998BE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1DA715B9-AB8C-4243-BF03-9C9CA6C5E56D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DA715B9-AB8C-4243-BF03-9C9CA6C5E56D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DA715B9-AB8C-4243-BF03-9C9CA6C5E56D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DA715B9-AB8C-4243-BF03-9C9CA6C5E56D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ADFFE81A-2CF6-44D5-879D-6C6FF4B998BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADFFE81A-2CF6-44D5-879D-6C6FF4B998BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADFFE81A-2CF6-44D5-879D-6C6FF4B998BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADFFE81A-2CF6-44D5-879D-6C6FF4B998BE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D87C02EC-26B7-47E8-B9C0-A296192D48FC} = {794BF80D-0703-4A0C-8370-1F443A70C0C7}
+		{1DA715B9-AB8C-4243-BF03-9C9CA6C5E56D} = {D87C02EC-26B7-47E8-B9C0-A296192D48FC}
+		{ADFFE81A-2CF6-44D5-879D-6C6FF4B998BE} = {FB754A56-73C4-45E1-B138-F364A81E4DCF}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7A33C18F-871B-4F1A-9B2E-B0957CC786CE}
+	EndGlobalSection
+EndGlobal
