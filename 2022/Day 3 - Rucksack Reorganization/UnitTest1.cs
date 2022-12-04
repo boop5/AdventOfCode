@@ -1,17 +1,9 @@
 using AdventOfCode.Domain.Extensions;
-using Xunit.Abstractions;
 
 namespace AoC_2022_Day3;
 
 public class UnitTest1
 {
-    private readonly ITestOutputHelper output;
-
-    public UnitTest1(ITestOutputHelper output)
-    {
-        this.output = output;
-    }
-
     private Dictionary<char, int> ItemPriorities { get; } = new()
     {
         { 'a', 1 },
