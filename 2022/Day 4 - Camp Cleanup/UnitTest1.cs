@@ -1,75 +1,78 @@
-namespace AoC_2022_Day4
+namespace AoC_2022_Day4;
+
+public class UnitTest1
 {
-    public class UnitTest1
+    private bool SectionContainsOtherSection(string sections)
     {
-        [Fact]
-        public void SolvePart1()
+        var splitSections = sections.Split(",");
+        var section1 = splitSections[0];
+        var section2 = splitSections[1];
+
+        var range1 = section1.Split("-");
+        var from1 = int.Parse(range1[0]);
+        var to1 = int.Parse(range1[1]);
+
+        var range2 = section2.Split("-");
+        var from2 = int.Parse(range2[0]);
+        var to2 = int.Parse(range2[1]);
+
+
+        if (from1 <= from2 && to1 >= to2)
         {
-            var occurrences = 0;
-            var pairs = ReadInput();
-
-            foreach (var pair in pairs)
-            {
-                var splitPair = pair.Split(",");
-                var range1 = splitPair[0];
-                var range2 = splitPair[1];
-
-                var splitRange1 = range1.Split("-");
-                var from1 = int.Parse(splitRange1[0]);
-                var to1 = int.Parse(splitRange1[1]);
-
-                var splitRange2 = range2.Split("-");
-                var from2 = int.Parse(splitRange2[0]);
-                var to2 = int.Parse(splitRange2[1]);
-
-
-                if (from1 <= from2 && to1 >= to2)
-                {
-                    occurrences++;
-                }
-                else if (from2 <= from1 && to2 >= to1)
-                {
-                    occurrences++;
-                }
-            }
-
-            Assert.Equal(453, occurrences);
+            return true;
+        }
+        else if (from2 <= from1 && to2 >= to1)
+        {
+            return true;
         }
 
-        [Fact]
-        public void SolvePart2()
+        return false;
+    }
+
+    private bool SectionsOverlap(string sections)
+    {
+        var splitSections = sections.Split(",");
+        var section1 = splitSections[0];
+        var section2 = splitSections[1];
+
+        var range1 = section1.Split("-");
+        var from1 = int.Parse(range1[0]);
+        var to1 = int.Parse(range1[1]);
+        var sections1 = Enumerable.Range(from1, to1 - from1 + 1);
+
+        var range2 = section2.Split("-");
+        var from2 = int.Parse(range2[0]);
+        var to2 = int.Parse(range2[1]);
+        var sections2 = Enumerable.Range(from2, to2 - from2 + 1);
+
+        if (sections1.Any(sections2.Contains))
         {
-            var occurrences = 0;
-            var pairs = ReadInput();
-
-            foreach (var pair in pairs)
-            {
-                var splitPair = pair.Split(",");
-                var range1 = splitPair[0];
-                var range2 = splitPair[1];
-
-                var splitRange1 = range1.Split("-");
-                var from1 = int.Parse(splitRange1[0]);
-                var to1 = int.Parse(splitRange1[1]);
-                var sections1 = Enumerable.Range(from1, to1 - from1 + 1);
-
-                var splitRange2 = range2.Split("-");
-                var from2 = int.Parse(splitRange2[0]);
-                var to2 = int.Parse(splitRange2[1]);
-                var sections2 = Enumerable.Range(from2, to2 - from2 + 1);
-
-                if (sections1.Any(sections2.Contains))
-                {
-                    occurrences++;
-                }
-            }
-
-            Assert.Equal(919, occurrences);
+            return true;
         }
 
-        private static List<string> ReadInput()
-        {
-            return File.ReadAllLines("input").ToList();
-        }
+        return false;
+    }
+
+    [Fact]
+    public void SolvePart1()
+    {
+        var pairs = ReadInput();
+        var occurrences = pairs.Where(SectionContainsOtherSection).Count();
+
+        Assert.Equal(453, occurrences);
+    }
+
+    [Fact]
+    public void SolvePart2()
+    {
+        var pairs = ReadInput();
+        var occurrences = pairs.Where(SectionsOverlap).Count();
+
+        Assert.Equal(919, occurrences);
+    }
+
+    private static IEnumerable<string> ReadInput()
+    {
+        return File.ReadAllLines("input");
     }
 }
