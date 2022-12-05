@@ -1,6 +1,9 @@
-namespace AoC_2022_Day4;
+// ReSharper disable once CheckNamespace
+using AdventOfCode.Domain;
 
-public class UnitTest1
+namespace AdventOfCode22.Day4;
+
+public class Day4
 {
     private bool SectionContainsOtherSection(string sections)
     {
@@ -56,7 +59,7 @@ public class UnitTest1
     [Fact]
     public void SolvePart1()
     {
-        var pairs = ReadInput();
+        var pairs = InputReader.ReadLines();
         var occurrences = pairs.Where(SectionContainsOtherSection).Count();
 
         Assert.Equal(453, occurrences);
@@ -65,14 +68,9 @@ public class UnitTest1
     [Fact]
     public void SolvePart2()
     {
-        var pairs = ReadInput();
+        var pairs = InputReader.ReadLines();
         var occurrences = pairs.Where(SectionsOverlap).Count();
 
         Assert.Equal(919, occurrences);
-    }
-
-    private static IEnumerable<string> ReadInput()
-    {
-        return File.ReadAllLines("input");
     }
 }

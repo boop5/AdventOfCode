@@ -1,14 +1,12 @@
-using AdventOfCode.Domain.Extensions;
+// ReSharper disable once CheckNamespace
 
-namespace AoC_2022_Day1;
+using System.Runtime.CompilerServices;
+using AdventOfCode.Domain;
 
-public class UnitTest1
+namespace AdventOfCode22.Day1;
+
+public class Day1
 {
-    private static string ReadInput()
-    {
-        return File.ReadAllText("input");
-    }
-
     private static IEnumerable<int> GetCalories(IEnumerable<string> input)
     {
         return input.Select(x => x.SplitByLineBreak()
@@ -20,7 +18,7 @@ public class UnitTest1
     [Fact]
     public void SolvePart1()
     {
-        var elves = ReadInput().SplitByBlankLine();
+        var elves = InputReader.ReadText().SplitByBlankLine();
         var maxCalories = GetCalories(elves).Max();
 
         Assert.Equal(69281, maxCalories);
@@ -29,7 +27,7 @@ public class UnitTest1
     [Fact]
     public void SolvePart2()
     {
-        var elves = ReadInput().SplitByBlankLine();
+        var elves = InputReader.ReadText().SplitByBlankLine();
         var maxCalories = GetCalories(elves)
                           .OrderByDescending(x => x)
                           .Take(3)

@@ -1,12 +1,11 @@
-namespace AoC_2022_Day2;
+// ReSharper disable once CheckNamespace
 
-public class UnitTest1
+using AdventOfCode.Domain;
+
+namespace AdventOfCode22.Day2;
+
+public class Day2
 {
-    private static IEnumerable<string> ReadInput()
-    {
-        return File.ReadAllLines("input");
-    }
-
     private static string OPPONENT_ROCK = "A";
     private static string OPPONENT_PAPER = "B";
     private static string OPPONENT_SCISSOR = "C";
@@ -30,7 +29,7 @@ public class UnitTest1
             return PointsFromTool(myPlay) + PointsFromPlay(opponentsPlay, myPlay);
         }
 
-        var points = ReadInput().Select(CalculateMatchResult).Sum();
+        var points = InputReader.ReadLines().Select(CalculateMatchResult).Sum();
 
         Assert.Equal(11767, points);
     }
@@ -77,7 +76,7 @@ public class UnitTest1
             return PointsFromPlay(opponentPlay, play) + PointsFromTool(play);
         }
 
-        var points = ReadInput().Select(CalculateMatchResult).Sum();
+        var points = InputReader.ReadLines().Select(CalculateMatchResult).Sum();
 
         Assert.Equal(13886, points);
     }

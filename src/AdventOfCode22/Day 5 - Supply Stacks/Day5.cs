@@ -1,15 +1,12 @@
+using AdventOfCode.Domain;
 using System.Text.RegularExpressions;
 
-namespace AoC_2022_Day5;
+// ReSharper disable once CheckNamespace
+namespace AdventOfCode22.Day5;
 
-public class UnitTest1
+public class Day5
 {
     private readonly Regex _instructionsRegex = new(@"move (\d+) from (\d+) to (\d+)");
-
-    private static string ReadInput()
-    {
-        return File.ReadAllText("input");
-    }
 
     [Fact]
     public void SolvePart1()
@@ -29,7 +26,7 @@ public class UnitTest1
 
     private string Solve(MoveBehavior moveBehavior)
     {
-        var input = ReadInput();
+        var input = InputReader.ReadText();
         var splitInput = input.Split(Environment.NewLine + Environment.NewLine);
         var schemeText = splitInput[0];
         var instructionsText = splitInput[1];

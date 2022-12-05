@@ -1,8 +1,9 @@
-using AdventOfCode.Domain.Extensions;
+// ReSharper disable once CheckNamespace
+using AdventOfCode.Domain;
 
-namespace AoC_2022_Day3;
+namespace AdventOfCode22.Day3;
 
-public class UnitTest1
+public class Day3
 {
     private Dictionary<char, int> ItemPriorities { get; } = new()
     {
@@ -37,7 +38,7 @@ public class UnitTest1
     [Fact]
     public void SolvePart1()
     {
-        var rucksacks = ReadInput();
+        var rucksacks = InputReader.ReadLines();
         var result = rucksacks.Select(GetCommonItemPriority).Sum();
 
         Assert.Equal(8493, result);
@@ -46,7 +47,7 @@ public class UnitTest1
     [Fact]
     public void SolvePart2()
     {
-        var rucksacks = ReadInput().ToList();
+        var rucksacks = InputReader.ReadLines().ToList();
         var groups = rucksacks.ChunkBy(3);
         var result = groups.Select(GetBadgeTypeOfGroup)
                            .Select(GetItemPriority)
@@ -85,10 +86,5 @@ public class UnitTest1
         if (char.IsUpper(item))
             return ItemPriorities[char.ToLower(item)] + 26;
         return ItemPriorities[item];
-    }
-
-    private static IEnumerable<string> ReadInput()
-    {
-        return File.ReadAllLines("input");
     }
 }
