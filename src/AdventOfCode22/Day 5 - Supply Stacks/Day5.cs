@@ -26,7 +26,7 @@ public class Day5
     private string Solve(MoveBehavior moveBehavior)
     {
         var input = InputReader.ReadText();
-        var splitInput = input.Split(Environment.NewLine + Environment.NewLine);
+        var splitInput = input.SplitByBlankLine();
         var schemeText = splitInput[0];
         var instructionsText = splitInput[1];
 

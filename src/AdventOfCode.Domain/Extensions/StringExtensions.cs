@@ -2,7 +2,7 @@
 
 public static class StringExtensions
 {
-    public static IEnumerable<string> SplitByBlankLine(
+    public static string[] SplitByBlankLine(
         this string str,
         StringSplitOptions options = StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries)
     {
