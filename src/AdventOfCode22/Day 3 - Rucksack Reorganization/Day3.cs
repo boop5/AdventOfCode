@@ -1,6 +1,4 @@
 // ReSharper disable once CheckNamespace
-using AdventOfCode.Domain;
-
 namespace AdventOfCode22.Day3;
 
 public class Day3
