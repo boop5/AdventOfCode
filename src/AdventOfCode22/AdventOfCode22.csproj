@@ -44,6 +44,9 @@
 	<None Update="Day 6 - Tuning Trouble\input">
 	  <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 	</None>
+	<None Update="Day 7 - No Space Left On Device\input">
+	  <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	</None>
   </ItemGroup>
 
 </Project>
