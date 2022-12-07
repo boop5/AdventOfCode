@@ -1,0 +1,31 @@
+﻿body {
+    background-color: #0a0a0a;
+    color: white;
+    font-family: Consolas, monaco, monospace;
+    font-weight: 100;
+    white-space: pre;
+    font-size: 3em;
+    padding: 0.2em;
+    line-break:anywere;
+}
+
+.cmd{
+    color:greenyellow;
+    font-weight: 900;
+}
+
+.output{
+    color: #777;
+}
+
+.path {
+    color: #E1AD01;
+}
+
+.dir {
+    color: blue;
+}
+
+.user{
+    color: green
+}
