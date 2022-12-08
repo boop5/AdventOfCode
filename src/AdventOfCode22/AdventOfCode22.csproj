@@ -47,6 +47,9 @@
 	<None Update="Day 7 - No Space Left On Device\input">
 	  <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 	</None>
+	<None Update="Day 8 - Treetop Tree House\input">
+	  <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	</None>
   </ItemGroup>
 
 </Project>

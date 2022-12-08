@@ -1,4 +1,5 @@
-export const input = `[M] [H]         [N]                
+export const input = `
+[M] [H]         [N]                
 [S] [W]         [F]     [W] [V]    
 [J] [J]         [B]     [S] [B] [F]
 [L] [F] [G]     [C]     [L] [N] [N]
