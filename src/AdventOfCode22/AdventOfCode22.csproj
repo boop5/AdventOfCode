@@ -29,6 +29,9 @@
     <None Update="Day 1 - Calorie Counting\input">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="Day 10 - Cathode-Ray Tube\input">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Update="Day 2 - Rock Paper Scissors\input">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
