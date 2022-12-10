@@ -1,8 +1,8 @@
 ﻿// ReSharper disable once CheckNamespace
 
-namespace AdventOfCode22.Day8;
+namespace AdventOfCode22.Day08;
 
-public class Day8
+public class Day08
 {
     [Fact]
     public void SolvePart1()

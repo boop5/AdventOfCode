@@ -1,9 +1,9 @@
 using System.Text.RegularExpressions;
 
 // ReSharper disable once CheckNamespace
-namespace AdventOfCode22.Day5;
+namespace AdventOfCode22.Day05;
 
-public class Day5
+public class Day05
 {
     private readonly Regex _instructionsRegex = new(@"move (\d+) from (\d+) to (\d+)");
 

@@ -26,34 +26,34 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="Day 1 - Calorie Counting\input">
+    <None Update="Day 01 - Calorie Counting\input">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="Day 10 - Cathode-Ray Tube\input">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Update="Day 2 - Rock Paper Scissors\input">
+    <None Update="Day 02 - Rock Paper Scissors\input">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Update="Day 3 - Rucksack Reorganization\input">
+    <None Update="Day 03 - Rucksack Reorganization\input">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Update="Day 4 - Camp Cleanup\input">
+    <None Update="Day 04 - Camp Cleanup\input">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Update="Day 5 - Supply Stacks\input">
+    <None Update="Day 05 - Supply Stacks\input">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-	<None Update="Day 6 - Tuning Trouble\input">
+	<None Update="Day 06 - Tuning Trouble\input">
 	  <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 	</None>
-	<None Update="Day 7 - No Space Left On Device\input">
+	<None Update="Day 07 - No Space Left On Device\input">
 	  <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 	</None>
-	<None Update="Day 8 - Treetop Tree House\input">
+	<None Update="Day 08 - Treetop Tree House\input">
 	  <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 	</None>
-	<None Update="Day 9 - Rope Bridge\input">
+	<None Update="Day 09 - Rope Bridge\input">
 	  <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 	</None>
   </ItemGroup>

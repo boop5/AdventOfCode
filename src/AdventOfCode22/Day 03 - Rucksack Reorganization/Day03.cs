@@ -1,7 +1,7 @@
 // ReSharper disable once CheckNamespace
-namespace AdventOfCode22.Day3;
+namespace AdventOfCode22.Day03;
 
-public class Day3
+public class Day03
 {
     private Dictionary<char, int> ItemPriorities { get; } = new()
     {

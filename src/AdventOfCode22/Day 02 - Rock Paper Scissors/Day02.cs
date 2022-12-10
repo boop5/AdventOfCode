@@ -1,7 +1,7 @@
 // ReSharper disable once CheckNamespace
-namespace AdventOfCode22.Day2;
+namespace AdventOfCode22.Day02;
 
-public class Day2
+public class Day02
 {
     private static string OPPONENT_ROCK = "A";
     private static string OPPONENT_PAPER = "B";

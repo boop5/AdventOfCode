@@ -1,7 +1,7 @@
 // ReSharper disable once CheckNamespace
-namespace AdventOfCode22.Day4;
+namespace AdventOfCode22.Day04;
 
-public class Day4
+public class Day04
 {
     private bool SectionContainsOtherSection(string sections)
     {

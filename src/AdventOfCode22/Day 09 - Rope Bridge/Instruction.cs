@@ -1,5 +1,5 @@
 ﻿// ReSharper disable once CheckNamespace
-namespace AdventOfCode22.Day9;
+namespace AdventOfCode22.Day09;
 
 internal class Instruction
 {

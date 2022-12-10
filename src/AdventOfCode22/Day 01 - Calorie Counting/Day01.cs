@@ -1,7 +1,7 @@
 // ReSharper disable once CheckNamespace
-namespace AdventOfCode22.Day1;
+namespace AdventOfCode22.Day01;
 
-public class Day1
+public class Day01
 {
     private static IEnumerable<int> GetCalories(IEnumerable<string> input)
     {
