@@ -56,6 +56,9 @@
 	<None Update="Day 09 - Rope Bridge\input">
 	  <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 	</None>
+	<None Update="Day 11 - Monkey in the Middle\input">
+	  <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	</None>
   </ItemGroup>
 
 </Project>
